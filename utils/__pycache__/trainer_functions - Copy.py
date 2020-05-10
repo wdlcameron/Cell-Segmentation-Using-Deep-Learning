@@ -16,20 +16,6 @@ import xml.etree.cElementTree as ET
 from fastai.vision import *
 from fastai.metrics import error_rate
 
-#For the pickle generator
-#import brambox.boxes as bbb
-
-"""
-Note that these functions are very specific to our trainer.  More generic versions will be created at some point...
-
-
-"""
-
-
-
-
-
-
 def find_files(path, directory_list = {}, double_subpath = True):
 
     
