@@ -26,7 +26,7 @@ def unet_trainer_program (root_path, training_parameters, export_name = 'Export.
         learn.fit_one_cycle(5, max_lr = lr)
         cache = update_cache(learn, cache)
         learn.unfreeze()
-        learn.fit_one_cycle(5, slice(lr/100, lr/2))
+        learn.fit_one_cycle(100, slice(lr/100, lr/2))
         cache = update_cache(learn, cache)
         learn.export(model_path/export_name)
         if output_cache: output_cache_results(figures_path, cache)
