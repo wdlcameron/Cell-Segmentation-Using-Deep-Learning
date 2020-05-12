@@ -2,7 +2,7 @@
 
 ## Overview:
 
-A module to train cell segmentation models using deep learning, as outlined in "Cell segmentation using deep learning: comparing label and label-free approaches using hyper-labeled image stacks"  (WD Cameron, CV Bui, AM Bennett, HH Chang, and JV Rocheleau).  The objective is to train models that can taake cellular images or varying types and
+A module to train cell segmentation models using deep learning, as outlined in "Cell segmentation using deep learning: comparing label and label-free approaches using hyper-labeled image stacks"  (WD Cameron, CV Bui, AM Bennett, HH Chang, and JV Rocheleau). 
 
 ## Quickstart:
 Make sure you have the base requirements intalled and have a CUDA-enabled GPU.  Download the "Model Trainer" dataset from the provided link and unzip it into a `.data` folder in your home user directory.  Open [**Segmentation Model Trainer.ipynb**](Segmentation%20Model%20Trainer.ipynb) and run the cells to train the default models.  Further instructions are provided in the notebook.
