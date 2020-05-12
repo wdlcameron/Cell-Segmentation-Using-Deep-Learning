@@ -57,3 +57,26 @@ Data is loaded into the model using loading codes.  Although these may represent
 </p>
 
 Loading codes 51-199 are used to define custom behaviour.  If you wish to add your own loading code definitions, do so in `utils/segmentation_dataclass.py`
+
+## Additional Modules in "Segmentation Model Trainer.ipynb"
+
+
+### Data Augmentation (Transformation Explorer)
+Data augmentation is a simple way to vastly expand the variety of data that's shown to the model.  This helps the model generalize well to new, unseen inputs.  Various types of transformations can be explored using the transformation module and added to training.
+<p align="center">
+<img src="images/transformations.png" alt="Cell Transformations" width="400" />
+</p>
+
+
+### Cross-Entropy Weighing
+Weighing the background and cell losses differently will encourage the model to either tend to oversegment the cell, or undersegment the cell as shown here.  As there is a tradeoff between accuracy of the cell pixels and the background pixels, you will have to decide which you want to prioritize for your application.  
+
+<p align="center">
+<img src="images/cross_entropy_penalty.png" alt="Cross Entropy Penalties" width="800" />
+</p>
+
+### Learning Rate Finder
+Determining your maximum learning rate is a critical step when training deep learning models. Too high and the fit will diverge.  Too low and it will take a long time to reach a local minimum.  Use the learning rate module to determine the ideal learning rate for your dataset.  
+<p align="center">
+<img src="images/learning_rate_finder.png" alt="Learning Rate Graph" width="400" />
+</p>
